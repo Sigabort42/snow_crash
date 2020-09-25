@@ -1,0 +1,6 @@
+cat /etc/passwd
+
+flag:42hDRfypTqqnw
+
+john "42hDRfypTqqnw" == abcdefg
+
