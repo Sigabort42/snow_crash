@@ -1,0 +1,21 @@
+On execute ./level09 avec le paramtres token.
+
+ls -l qui nous permet la lecture de token
+
+`cat token` nous affiche le token et il a l'air crypté
+
+On re-execute ./level09 avec le parametres token et on voit qu'il ya un cryptage cesar dynamqiue
+
+On fait un script python
+
+import sys
+
+flag = ""
+for i, c in enumerate(sys.argv[1]):
+	flag += chr(ord(c) - i)
+
+print(flag)
+
+Et on affiche le flag qui nous permet de nous connecter en tant que flag10
+
+f3iji1ju5yuevaus41q1afiuq

